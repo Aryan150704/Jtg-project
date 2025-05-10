@@ -1,0 +1,127 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #ffffff;
+  color: #333;
+}
+
+/* Container for layout alignment */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Header */
+.site-header {
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo img {
+  height: 40px;
+}
+
+/* Navigation styles */
+.main-nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  transition: color 0.2s;
+ 
+}
+.main-nav a button{
+    border: none;
+    background-color: #fff;
+    font-size: 17px;
+    margin-top: 2px;
+}
+.main-nav a button:hover{
+    border: none;
+    background-color: #FFB400;
+}
+.main-nav a:hover {
+  color: #FFB400;
+  
+}
+
+/* Header Buttons */
+.header-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.btn-primary {
+  padding: 8px 20px;
+  background-color: #FFB400;
+  border: none;
+  color: black;
+  font-weight:550;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  color: #FFB400;
+  background-color:black ;
+}
+.hero-section {
+  padding: 60px 0;
+  background-color: #f9f9f9;
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.hero-text p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #666;
+}
+
+.hero-image {
+  flex: 1;
+  text-align: center;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+}
+.hero-section span{
+    color:#FFB400;
+}
