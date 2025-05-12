@@ -13,19 +13,19 @@
 </head>
     <body>
     <!-- We'll start adding content here in the next step -->
-        <header class="site-header">
-            <div class="container">
+        <header class="site-header" >
+            <div class="container" >
             <div class="logo">
             <img src="assets/logoOntop.png" alt="JTG Logo" />
             </div>
-            <nav class="main-nav">
+            <nav class="main-nav" >
                 <ul>
-                <li><a href="#"><button>Home</button></a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Education</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Recommendations</a></li>
-                <li><a href="#">Contact</a></li>               
+                <li><a href="#home"><button>Home</button></a></li>
+                <li><a href="#skills"><button>Skills</button></a></li>
+                <li><a href="#education"><button>Education</button></a></li>
+                <li><a href="#projects"><button>Projects</button></a></li>
+                <li><a href="#recommendation"><button>Recommendations</button></a></li>
+                <li><a href="#contact"><button>Contact</button></a></li>     
             </ul>
             </nav>
             <!-- <div class="header-buttons">
@@ -34,7 +34,8 @@
             </div> -->
             </div>
         </header>
-        <section class="hero-section">
+
+        <section class="hero-section" id="home">
             <div class="container hero-container">
                 <div class="hero-text">
                 <h1>I am Aryan<br> <span>Front-end</span> Developer</h1>
@@ -46,7 +47,9 @@
                 </div>
             </div>
         </section>
-        <section class="projects-section">
+        <section id="skills"></section>
+        <section id="education"></section>
+        <section class="projects-section" id="projects">
     <div class="header">
       <h2>Projects</h2>
       <p>
@@ -153,17 +156,16 @@
       </div>
       
     </div>
-  </section>
-    <div class="testimonial-section">
+  <div class="testimonial-section" id="recommendation">
     <h2>Recommendations</h2>
     <p class="subtitle">
       Amet Minim Mollit Non Deserunt Ullamco Est Sit Aliqua Dolor Do Amet Sint. <br>
       Velit Officia Consequat Duis Enim Velit Mollit. Lorem Ipsum
     </p>
 
-    <div class="carousel-container">
-      <div class="carousel-track">
-        <!-- Cards 1-->
+    <div class="carousel-container" id="carousel">
+      <div class="carousel-track" id="track">
+        <!-- Cards -->
         <div class="card">
           <div class="stars">★★★★★</div>
           <h3>Great Quality!</h3>
@@ -176,7 +178,7 @@
             </div>
           </div>
         </div>
-        <!-- Cards 2-->
+
         <div class="card">
           <div class="stars">★★★★★</div>
           <h3>Amazing Work!</h3>
@@ -189,7 +191,7 @@
             </div>
           </div>
         </div>
-        <!-- Cards 3-->
+
         <div class="card">
           <div class="stars">★★★★★</div>
           <h3>Great Quality!</h3>
@@ -197,12 +199,12 @@
           <div class="author">
             <img src="assets/reviewer3.png" />
             <div>
-              <strong>Susan Westervelt</strong><br />
+              <strong>Talian Westervelt</strong><br />
               <span>Business Man</span>
             </div>
           </div>
         </div>
-        <!-- Cards 4-->
+
         <div class="card">
           <div class="stars">★★★★★</div>
           <h3>Top Notch</h3>
@@ -210,12 +212,12 @@
           <div class="author">
             <img src="assets/reviewer4.png" />
             <div>
-              <strong>Talan Leboxa</strong><br />
+              <strong>Taro Lee</strong><br />
               <span>Content Writer</span>
             </div>
           </div>
         </div>
-        <!-- Cards 5-->
+
         <div class="card">
           <div class="stars">★★★★★</div>
           <h3>Very Satisfied</h3>
@@ -230,10 +232,127 @@
         </div>
       </div>
     </div>
+    
+    <div class="dots" id="dots"></div>
+  </div>
+   <div class="container1" id="contact">
+    <!-- Left: Contact Form -->
+    <div class="contact-form-wrapper">
+        <h2 style="margin-bottom: 20px;">Leave ME Your Info</h2>
+      <div class="contact-form">
+        
+        <form>
+          <label for="name">Your Full Name ( Required )</label>
+          <input type="text" id="name" required>
 
-    <div class="dots"></div>
+          <label for="email">Your Email ( Required )</label>
+          <input type="email" id="email" required>
+
+          <label for="subject">Subject</label>
+          <input type="text" id="subject">
+
+          <label for="message">Your Message</label>
+          <textarea id="message"></textarea>
+
+          <button type="submit">SEND MESSAGE</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Right: Contact Info -->
+    <div class="contact-info">
+      <h2 style="margin-bottom: 20px;">Contact Information</h2>
+
+      <div class="info-card">
+        <div class="info-header">
+          <div class="info-icon">📍</div>
+        </div>
+        <p><span class="info-label">Country:</span> Bangladesh</p>
+        <p><span class="info-label">City:</span> Dhaka</p>
+        <p><span class="info-label">Street:</span> 35 Vhatara, Badda</p>
+      </div>
+
+      <div class="info-card">
+        <div class="info-header">
+          <div class="info-icon">✉️</div>
+        </div>
+        <p><span class="info-label">Email:</span> Youremail@Gmail.Com</p>
+        <p><span class="info-label">Skype:</span> @Yourusername</p>
+        <p><span class="info-label">Telegram:</span> @Yourusername</p>
+      </div>
+
+      <div class="info-card">
+        <div class="info-header">
+          <div class="info-icon">📞</div>
+        </div>
+        <p><span class="info-label">Support Services:</span> 15369</p>
+        <p><span class="info-label">Office:</span> +58 (021)356 587 235</p>
+        <p><span class="info-label">Personal:</span> +58 (021)356 587 235</p>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+
+  <!-- Top Logo Row -->
+  <div class="footer-top-logos">
+    <img src="assets/footerlogo1.png" alt="Logo 1">
+    <img src="assets/footerlogo2.png" alt="Logo 2">
+    <img src="assets/footerlogo3.png" alt="Logo 3">
+    <img src="assets/footerlogo4.png" alt="Logo 4">
   </div>
 
+  <!-- Main Footer Columns -->
+  <div class="footer-container">
+    
+    <!-- Logo and Ratings -->
+    <div class="footer-col logo-and-ratings">
+      <img src="assets/logoOntop.png" alt="Main Logo" class="logo" />
+      <div class="ratings">
+        <p><img src="assets/footerbaselogo1.png" alt=""> 4.5/5 Rating On Lorem</p>
+        <p><img src="assets/footerbaselogo2.png" alt=""> 9/10 Rating On Ipsum</p>
+        <p><img src="assets/footerbaselogo3.png" alt=""> 4.5/5 Rating On Dorel</p>
+      </div>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li>Home</li>
+        <li>Skills</li>
+        <li>Education</li>
+        <li>Projects</li>
+        <li>Recommendations</li>
+      </ul>
+    </div>
+
+    <!-- Portfolio -->
+    <div class="footer-col">
+      <h4>Portfolio</h4>
+      <ul>
+        <li>Frontend Development</li>
+        <li>Backend Development</li>
+        <li>Website Design</li>
+        <li>Machine Learning</li>
+        <li>Problem Solving & DSA</li>
+      </ul>
+    </div>
+
+    <!-- Connect -->
+    <div class="footer-col">
+      <h4>Connect</h4>
+      <p><img src="assets/linkedinlogo.png" alt=""> </p>
+      <p><img src="assets/instagramlogo.png" alt=""> </p>
+      <p><img src="assets/Facebooklogo.png" alt=""> </p>
+    </div>
+
+  </div>
+
+  <!-- Copyright -->
+  <div class="copyright">
+    <p>© 2024 Copyright, All Right Reserved</p>
+  </div>
+</footer>
         <script src="js/script.js"></script>
     </body>
 </html>
