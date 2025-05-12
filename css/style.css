@@ -214,75 +214,290 @@ body {
 }
  
 
-    .testimonial-section {
-      text-align: center;
-      padding: 40px 20px;
-    }
+.testimonial-section {
+  text-align: center;
+  padding: 40px 20px;
+  }
 
-    .subtitle {
-      color: #666;
-      max-width: 600px;
-      margin: 0 auto 30px;
-    }
+.subtitle {
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto 30px;
+}
 
-    .carousel-container {
-      max-width: 900px;
+.carousel-container {
+  max-width: 900px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  cursor: grab;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 20px;
+  transition: transform 0.5s ease-in-out;
+  padding: 0 40px;
+}
+
+.card {
+  flex: 0 0 260px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  text-align: left;
+  user-select: none;
+}
+
+.stars {
+  color: gold;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.author img {
+  border-radius: 50%;
+  border: 2px solid gold;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.dots {
+  margin-top: 20px;
+}
+
+.dots span {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin: 0 4px;
+  border-radius: 50%;
+  background: #e7db9c;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dots .active {
+  background: gold;
+  width: 14px;
+  height: 14px;
+}
+    .container1 {
+      display: flex;
+      padding: 50px 60px;
+      max-width: 1200px;
       margin: auto;
-      overflow: hidden;
-      position: relative;
+      gap: 40px;
+      align-items: flex-start;
     }
 
-    .carousel-track {
-      display: flex;
-      gap: 20px;
-      transition: transform 0.5s ease-in-out;
-      padding: 0 40px;
+    .contact-form-wrapper {
+      flex: 0 0 60%;
     }
 
-    .card {
-      flex: 0 0 260px;
-      background: #fff;
-      border-radius: 12px;
-      padding: 20px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
-      text-align: left;
+    .contact-form {
+      background: #ffffff;
+      padding: 40px;
+      border-radius: 10px;
     }
 
-    .stars {
-      color: gold;
-      font-size: 1.2rem;
-      margin-bottom: 10px;
+    .contact-form h2 {
+      font-size: 24px;
+      font-weight: 700;
+      margin-top: 0;
     }
 
-    .author {
-      display: flex;
-      align-items: center;
+    .contact-form label {
+      display: block;
+      margin-top: 15px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 5px;
+      background: #f1f0f7;
+      margin-top: 5px;
+    }
+
+    .contact-form textarea {
+      height: 140px;
+      resize: vertical;
+    }
+
+    .contact-form button {
       margin-top: 20px;
-    }
-
-    .author img {
-      border-radius: 50%;
-      border: 2px solid gold;
-      width: 50px;
-      height: 50px;
-      object-fit: cover;
-      margin-right: 10px;
-    }
-
-    .dots {
-      margin-top: 20px;
-    }
-
-    .dots span {
-      display: inline-block;
-      width: 12px;
-      height: 12px;
-      margin: 0 5px;
-      border-radius: 50%;
-      background: #ccc;
+      padding: 12px 24px;
+      background: orange;
+      color: white;
+      border: none;
+      font-weight: bold;
+      border-radius: 5px;
       cursor: pointer;
     }
 
-    .dots .active {
-      background: gold;
+    .contact-info {
+      flex: 0 0 40%;
     }
+
+    .contact-info h2 {
+      font-size: 24px;
+      font-weight: 700;
+    }
+
+    .info-card {
+      background: #f9f9fb;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    .info-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .info-icon {
+      width: 36px;
+      height: 36px;
+      background: orange;
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 16px;
+      font-weight: bold;
+      margin-right: 10px;
+    }
+
+    .info-card p {
+      margin: 5px 0;
+    }
+
+    .info-label {
+      font-weight: bold;
+    }
+
+    @media (max-width: 900px) {
+      .container1 {
+        flex-direction: column;
+        gap: 20px;
+      }
+      .contact-form-wrapper,
+      .contact-info {
+        flex: 1 1 100%;
+      }
+    }
+.footer {
+  background-color: #f3f3f9;
+  padding: 60px 80px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Top Logos Row */
+.footer-top-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 50px;
+}
+
+.footer-top-logos img {
+  width: 120px;
+  height: auto;
+}
+
+/* Footer Columns */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footer-col {
+  flex: 1;
+  min-width: 180px;
+}
+
+.footer-col h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col ul li,
+.footer-col p {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.logo-and-ratings {
+  flex: 1;
+  min-width: 220px;
+}
+
+.logo-and-ratings img.logo {
+  width: 70px;
+  margin-bottom: 30px;
+}
+
+/* Ratings */
+.ratings p {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  margin-bottom: 16px;
+  color: #333;
+}
+
+.ratings p img {
+  width: 55px;
+  margin-right: 12px;
+}
+
+/* Social icons */
+.footer-col p img {
+  width: 80px;
+  height: 22px;
+  vertical-align: middle;
+  margin-right: 10px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.footer-col p img:hover {
+  transform: scale(1.1);
+}
+
+/* Copyright */
+.footer .copyright {
+  text-align: center;
+  padding-top: 40px;
+  font-size: 13px;
+  color: #777;
+}
+html {
+  scroll-behavior: smooth;
+}
